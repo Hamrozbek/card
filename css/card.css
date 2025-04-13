@@ -1,0 +1,48 @@
+.card{
+    background-color: blue;
+    color: white;
+    border: 1px solid black;
+}
+
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 10px;
+    background-color: #2C2C4A;
+    padding: 10px;
+
+    grid-template-areas: 
+        "a b b c"
+        "a d e f"
+        "a g h f"
+    ;
+}
+.card1{
+    grid-area: a;
+    background-color: #7AC142;
+}
+.card2{
+    grid-area: b;
+    background-color: #7AC142;
+}
+.card3{
+    background-color: #EF3E36;
+}
+.card4{
+    background-color: #F6B042;
+}
+.card5{
+    background-color: #EF3E36;
+}
+.card6{
+    grid-area: f;
+    background-color: #7AC142;
+}
+.card7{
+    background-color: #EF3E36;
+}
+.card8{
+    background-color: #F6B042;
+}

@@ -1,0 +1,45 @@
+.card{
+    background-color: blue;
+    color: white;
+}
+
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 5px;
+
+    grid-template-areas: 
+        "a a b c c"
+        "d f b c c"
+        "g f h h h"
+    ;
+}
+
+.card1{
+    grid-area: a;
+    background-color: #FF0000;
+}
+.card2{
+    grid-area: b;
+    background-color: #66DD66;
+}
+.card3{
+    grid-area: c;
+    background-color: #CC00AA;
+}
+.card4{
+    background-color: #2244CC;
+}
+.card5{
+    grid-area: f;
+    background-color: #00FF33;
+}
+.card6{
+    background-color: #DD4A00;
+}
+.card7{
+    grid-area: h;
+    background-color: #CC6677;
+}
